@@ -1,2 +1,2 @@
 # Javascript-Task
- Variables ,operators
+ Variables ,operators,functions
