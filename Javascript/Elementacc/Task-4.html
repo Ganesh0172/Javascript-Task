@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <select name="" id="drop" onchange="selectedDropdown()">
+
+        <option value="">Select sports</option>
+        <option value="Cricket">Cricket</option>
+        <option value="Kho-Kho">Kho-Kho</option>
+        <option value="Football">Football</option>
+        <option selected value="Hollyball">Hollyball</option>
+        <option value="Badmintan">Badmintan</option>
+    </select>
+    <input type="text" name="" id="text2" value="Sports" onkeydown="readText()">
+    <script>
+        //Create a one dropdown for sports and create one textbox.
+        //give default values for both.
+        //give same class name for dropdown and textbox.
+        //and First stored the dropdown selected value in console and textbox value in alert.
+        function selectedDropdown() {
+            var dropdown = document.getElementsByClassName("drop").value;
+            console.log(dropdown);
+        }
+        selectedDropdown()
+        function readText() {
+            var text = document.getElementsByClassName("text2").value;
+            alert(text);
+        }
+        readText()
+
+
+    </script>
+</body>
+
+</html>

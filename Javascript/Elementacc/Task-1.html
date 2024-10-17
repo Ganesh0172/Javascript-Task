@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="" id="dropdown" onchange="select()">
+        <option value="">Select Fruits</option>
+        <option value="Mango">Mango</option>
+        <option value="Greps">Greps</option>
+        <option value="Apple">Apple</option>
+        <option value="Gava">Gava</option>
+
+    </select>
+    <script>
+        //create a dropdown with some options of fruits
+        //read selected fruit store it in a variable and print value in console.
+        function select() {
+            var selecteditem = document.getElementById("dropdown").value;
+            console.log(selecteditem);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <input type="text" name="" id="plot" placeholder=" Enter plot no" >
+    <input type="text" name="" id="city" placeholder="Enter city" >
+    <input type="text" name="" id="state" placeholder="Enter state" >
+    <input type="text" name="" id="pin" placeholder="Enter pin" >
+    <textarea name="" id="Address"></textarea>
+    <input type="button"   class="btn btn-success" name="" id="" onclick="genrateFullAddress()" value="FullAddress">
+    <p id="FullAd">FullAddress:</p>
+
+     <script>
+          function genrateFullAddress(){
+            var a=document.getElementById("plot").value;
+        var b=document.getElementById("city").value;
+        var c=document.getElementById("state").value;
+        var d=document.getElementById("pin").value;
+        var e=document.getElementById("Address").value;
+        var FullAddress=a +','+ b +','+ c +','+ d +','+e;
+        document.getElementById("FullAd").innerText= "Full Address:"+ '  '+FullAddress;
+          }
+      
+     </script>
+</body>
+</html>

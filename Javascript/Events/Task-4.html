@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="dropdown" onchange="change()">
+        <option value="">Select Fruit</option>
+        <option value="Apple">Apple</option>
+        <option value="Mango">Mango</option>
+        <option value="Banna">Banna</option>
+        <option value="Gava">Gava</option>
+    </select>
+    <strong  id="fruit"></strong>
+     
+     
+    <script>
+        //Task 4 (Change Event)
+        //Create a dropdown with options of fruits
+        //add on change event and show selected value in strong tag
+        function change(){
+             var fruit=document.getElementById("dropdown").value;
+             document.getElementById('fruit').innerHTML =fruit
+       
+              
+        }
+
+
+    </script>
+</body>
+</html>

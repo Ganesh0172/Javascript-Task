@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="radio" name="gender" id="selectgender" value="Male" onclick="selectGendar()">Male
+    <input type="radio" name="gender" id="selectgender" value="Female" onclick="selectGendar()">Female
+
+    <script>
+        //create 2 radio buttons with same name ="gender" value will be Male & female
+        //read selected value and print it in console.
+        //try in to write it in console directly rather than in script section
+
+        function selectGendar() {
+            var selectedGender = document.getElementById("selectgender").value;
+            console.log(selectedGender)
+
+        }
+    </script>
+</body>
+
+</html>

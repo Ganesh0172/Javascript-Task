@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="txt1" placeholder="Num 1" onblur="addition()">
+    <input type="text" name="" id="txt2" placeholder="Num 2" onblur="addition()">
+    <input type="text" name="" id="txt3" placeholder="Result" disabled onblur="addition()">
+
+    <script>
+        //Task 2 (onblur Event or onchange)
+        //Take a three textbox.
+        //Do multiplicaton of textbox 1 nad 2 and store result in 3 textbox.
+        function addition(){
+
+            var a=document.getElementById("txt1").value;
+            var b=document.getElementById("txt2").value;
+            document.getElementById("txt3").value=a*b;
+         
+          
+
+        }
+        
+
+    </script>
+</body>
+</html>
